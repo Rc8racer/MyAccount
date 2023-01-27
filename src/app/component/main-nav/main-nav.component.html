@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand navbar-secondary bg-secondary px-2">
+    <div class="side-nav-button p-2 me-3 text-light" (click)="isSideNavToggled()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <a class="navbar-brand px-4" routerLink="#">goooze</a>
+    <span style="width: 68em"></span>
+    <div class="navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropstart">
+          <a
+            class="nav-link dropdown-toggle"
+            routerLink="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" routerLink="profile">My Profile</a></li>
+            <li><a class="dropdown-item" routerLink="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
