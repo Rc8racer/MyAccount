@@ -1,1 +1,79 @@
-<p>timesheet works!</p>
+
+    <div class="container">
+        <div class="card bg-dark mt-2 mb-2">
+          <label for="header" style="color: white;">
+            <h2>
+                {{date}}
+            </h2>
+        </label>
+        </div>
+        <form [formGroup]="form">
+            <table class="table table-striped table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">jira I'D</th>
+                    <th scope="col">jira Description</th>
+                    <th scope="col">jira status</th>
+                    <th scope="col">Check-in</th>
+                    <th scope="col">Check-out</th>
+                    <th scope="col">
+                        Date
+                    </th>
+                    <th class="col">
+                        submit
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="col">
+                    <input class="form-control form-control-sm" type="text" formControlName="jira">    
+                    </th>
+                    <th scope="col">
+                    <input class="form-control form-control-sm" type="text" formControlName="Desc">    
+                    </th>
+                    <th class="col">
+                      <input class="form-control form-control-sm" type="text" formControlName="status">                      
+                      </th>
+                    <th scope="col">
+                    <input class="form-control form-control-sm" type="time" formControlName="in">    
+                    </th>
+                    <th scope="col">
+                        <input class="form-control form-control-sm" type="time" formControlName="out">    
+                    </th>
+                    <th class="col">
+                    <input class="form-control form-control-sm" type="date" formControlName="Date">                      
+                    </th>
+                    <th scope="col">
+                        <button class="btn btn-primary" (click)="onClick()">add</button>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let Data of fieldData">
+                    <th scope="row">
+                      {{Data.jira}}
+                    </th>
+                    <td class="truncate">
+                      {{Data.Desc}}
+                    </td>
+                    <td>
+                      {{Data.status}}
+                    </td>
+                    <td>
+                      {{Data.in}}
+                    </td>
+                    <td>
+                      {{Data.out}}
+                    </td>
+                    <td>
+                      {{Data.Date}}
+                    </td>
+                    <td>
+                      <span><mat-icon>edit</mat-icon></span>
+                      
+                      <span><mat-icon>delete_forever</mat-icon></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </form>
+    </div>

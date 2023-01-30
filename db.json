@@ -1,19 +1,94 @@
 {
-  "posts": [
+  "formData": [
     {
+      "jira": "5754",
+      "Desc": "Dropdown task",
+      "in": "8",
+      "out": "5",
+      "task": "Done",
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "status": "In Development"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "jira": "578",
+      "Desc": "bug",
+      "in": "8",
+      "out": "9",
+      "task": "in-progress",
+      "id": 2,
+      "status": "In Development"
+    },
+    {
+      "jira": "5478",
+      "Desc": "Bug-fix",
+      "in": "8:00am",
+      "out": "6:00pm",
+      "task": "Dpne",
+      "id": 3,
+      "status": "In Development"
+    },
+    {
+      "jira": "845",
+      "Desc": "Bug-fix",
+      "in": "8",
+      "out": "6",
+      "task": "analysing",
+      "id": 4,
+      "status": "In Development"
+    },
+    {
+      "jira": "785",
+      "Desc": "Bug",
+      "in": "8",
+      "out": "5",
+      "task": "done",
+      "id": 5,
+      "status": "In Development"
+    },
+    {
+      "jira": "5478",
+      "Desc": "Bug fix",
+      "in": "8",
+      "out": "5",
+      "task": "In-progress",
+      "id": 6,
+      "status": "In Development"
+    },
+    {
+      "jira": "4555",
+      "Desc": "jskgjios",
+      "task": "lskglmleikt",
+      "in": "lkmlsmhlsr",
+      "out": "lkhmklmh",
+      "id": 7,
+      "status": "In Development"
+    },
+    {
+      "jira": "1212",
+      "Desc": "Dropdown",
+      "status": "Requirement gathering",
+      "in": "2:00 PM",
+      "out": "6:00 PM",
+      "task": "Done",
+      "id": 8
+    },
+    {
+      "jira": "5784",
+      "Desc": "Css-bugs",
+      "status": "requirment analysis",
+      "in": "8",
+      "out": "5",
+      "task": "done",
+      "id": 9
+    },
+    {
+      "jira": "5787",
+      "Desc": "Css-issues",
+      "status": "done",
+      "in": "8",
+      "out": "5",
+      "Date": "2023-01-29",
+      "id": 10
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

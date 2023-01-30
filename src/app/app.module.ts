@@ -10,7 +10,18 @@ import { SideNavComponent } from './component/side-nav/side-nav.component';
 import { TimesheetComponent } from './component/timesheet/timesheet.component';
 import { TimeOrganiserComponent } from './component/time-organiser/time-organiser.component';
 import { JiraBoardComponent } from './component/jira-board/jira-board.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './component/login/login.component';
+import { RegisterComponent } from './component/register/register.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,10 +32,23 @@ import { JiraBoardComponent } from './component/jira-board/jira-board.component'
     TimesheetComponent,
     TimeOrganiserComponent,
     JiraBoardComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatTableModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    MatIconModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

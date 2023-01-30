@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "dinesh-f5a4c": {
+      "hosting": {
+        "crud": [
+          "dinesh-f5a4c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "dinesh-f5a4c"
+  }
+}
