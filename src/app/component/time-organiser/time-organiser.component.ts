@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './time-organiser.component.html',
   styleUrls: ['./time-organiser.component.scss']
 })
-export class TimeOrganiserComponent implements OnInit {
+export class TimeOrganiserComponent{
+ 
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+     }
+ 
   }
 
-}
+
+
